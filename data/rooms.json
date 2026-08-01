@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "label": "101",
+    "name": "Pokój standard jednoosobowy",
+    "type": 1,
+    "capacity": 1,
+    "description": "Pokój jednoosobowy z podstawowym wyposażeniem, idealny dla podróżujących służbowo lub turystów.",
+    "available": true
+  },
+  {
+    "id": 2,
+    "label": "102",
+    "name": "Pokój standard jednoosobowy",
+    "type": 1,
+    "capacity": 1,
+    "description": "Pokój jednoosobowy z podstawowym wyposażeniem, idealny dla podróżujących służbowo lub turystów.",
+    "available": true
+  },
+  {
+    "id": 3,
+    "label": "103",
+    "name": "Pokój standard dwuosobowy",
+    "type": 2,
+    "capacity": 2,
+    "description": "Pokój dwuosobowy z podstawowym wyposażeniem, idealny dla podróżujących służbowo lub par.",
+    "available": true
+  },
+  {
+    "id": 4,
+    "label": "104",
+    "name": "Pokój standard dwuosobowy",
+    "type": 2,
+    "capacity": 2,
+    "description": "Pokój dwuosobowy z podstawowym wyposażeniem, idealny dla podróżujących służbowo lub par.",
+    "available": true
+  },
+  {
+    "id": 5,
+    "label": "201",
+    "name": "Apartament dwuosobowy",
+    "type": 3,
+    "capacity": 2,
+    "description": "Przestronny apartament z oddzielną sypialnią i salonem, idealny dla par lub rodzin.",
+    "available": false    
+  },
+  {
+    "id": 6,
+    "label": "202",
+    "name": "Apartament czteroosobowy",
+    "type": 4,
+    "capacity": 4,
+    "description": "Przestronny apartament z oddzielną sypialnią i salonem, idealny dla par lub rodzin.", 
+    "available": true
+  }
+]
