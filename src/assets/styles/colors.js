@@ -1,9 +1,11 @@
 export const theme = {
   colors: {
-    white: 'rgb(255 255 255)',
+    white: 'rgb(251 251 255)',
+    black: 'rgb(0 0 0)',
     mainGray: 'rgb(187 187 187)',
-    blue: 'rgb(53 126 221)',
-    blueHover: 'rgb(53 126 221 / 0.15)',
-    blueActive: 'rgb(53 126 221 / 0.8)'
+    yaleBlue: 'rgb(11 79 108)',
+    yaleBlueBright: 'rgb(11 79 108 / 0.15)',
+    yaleBlueDim: 'rgb(11 79 108 / 0.8)'
   }
 }
+
