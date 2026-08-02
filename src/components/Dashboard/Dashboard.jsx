@@ -4,7 +4,7 @@ import { StyledButton } from 'components/Button/Button.styles'
 
 export const Dashboard = () => {
   
-  const [ currentDate, setCurrentDate ] = useState(new Date())
+  // const [ currentDate, setCurrentDate ] = useState(new Date())
   
 
 
