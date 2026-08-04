@@ -9,7 +9,8 @@ export const theme = {
   },
   cellColors: {
     saturday: 'rgb(255 250 205)',
-    sunday: '	rgb(255 0 0)'
+    sunday: 'rgb(255 0 0)',
+    todayMarker: 'rgb(127 0 255 / 0.65)'
   }
 }
 

@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const StyledMainBookingTable = styled.table`
   border-collapse: collapse;
@@ -11,21 +11,7 @@ export const StyledMainBookingTable = styled.table`
   }
 `
 
-//themes
-/*
-    background-color: ${({ $saturday = false }) =>  ( $saturday ? 'yellow' :  '' )};
-    background-color: ${({ $sunday = false }) => ( $sunday ? 'red' :  '' )};
-  */ 
-/*
-  background-color: ${({ theme, $saturday, $sunday }) => {
-    if ( $saturday ) return theme.cellColors.saturday
-    if ( $sunday ) return theme.cellColors.sunday
-    return ''
-  }};
-*/
-
-export const ColoredTh = styled.th`
-  
+export const ColoredTh = styled.th`  
   background-color: ${({ theme, $color }) => {
     switch( $color) {
       case 'saturday':
@@ -36,7 +22,24 @@ export const ColoredTh = styled.th`
         return ''
     }
   }};
-
+    
+  
+  ${({ theme, $todayMarker }) =>
+    $todayMarker && 
+  css`
+      position: relative; 
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        width: 8px;
+        background: ${({ theme }) => theme.cellColors.todayMarker };
+        transform: translateX(-50%);
+        opacity: 0.9;
+      }
+    `}
 
 
 

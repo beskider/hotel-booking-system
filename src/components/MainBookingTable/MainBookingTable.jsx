@@ -16,7 +16,7 @@ export const MainBookingTable = ({ month, year }) => {
   const [ rooms, setRomms ] = useState([])
   const [ isLoadingRooms, setIsLoadingRooms ] = useState(true)
   const [ errorLoadingRooms, setErrorLoadingRooms ] = useState(null)
-  const [ , setShowTodayLine ] = useState(false)
+  const [ showTodayLine, setShowTodayLine ] = useState(false)
 
   useEffect( () => {
     const loadRooms = () => {
@@ -50,8 +50,7 @@ export const MainBookingTable = ({ month, year }) => {
   const saturdays = getSaturdaysOfMonth(month, year)  
   const sundays = getSundaysOfMonth(month, year)
   
-  useEffect( () => { 
-    console.log('elo')
+  useEffect( () => {     
     if ( month === new Date().getMonth() &&
     year === new Date().getFullYear() ) {        
       setShowTodayLine(true)
@@ -71,7 +70,7 @@ export const MainBookingTable = ({ month, year }) => {
     <ColoredTh 
       key={day}      
       $color={getDayColor(day)}
-      $todayMarker={true}
+      $todayMarker={showTodayLine && (day === new Date().getDate())}
     >
         {day}
     </ColoredTh>  
@@ -81,7 +80,7 @@ export const MainBookingTable = ({ month, year }) => {
     <ColoredTh 
       key={day}                
       $color={getDayColor(day)}
-      $todayMarker={true}
+      $todayMarker={showTodayLine && (day === new Date().getDate())}
     />      
   ))  
 
