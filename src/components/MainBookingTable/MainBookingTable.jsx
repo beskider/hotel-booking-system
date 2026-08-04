@@ -16,7 +16,7 @@ export const MainBookingTable = ({ month, year }) => {
   const [ rooms, setRomms ] = useState([])
   const [ isLoadingRooms, setIsLoadingRooms ] = useState(true)
   const [ errorLoadingRooms, setErrorLoadingRooms ] = useState(null)
-  const [ showTodayLine, setShowTodayLine ] = useState(false)
+  const [ , setShowTodayLine ] = useState(false)
 
   useEffect( () => {
     const loadRooms = () => {

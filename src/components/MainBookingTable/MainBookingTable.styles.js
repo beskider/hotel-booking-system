@@ -36,7 +36,7 @@ export const ColoredTh = styled.th`
         return ''
     }
   }};
-  border: 10px solid red;
+
 
 
 
