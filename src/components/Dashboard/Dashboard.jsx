@@ -6,6 +6,7 @@ import { TextButton } from 'components/TextButton/TextButton'
 import { SymbolButton } from 'components/SymbolButton/SymbolButton'
 import { Spacer } from 'components/Spacer/Spacer'
 import { MonthLabel } from 'components/MonthLabel/MonthLabel'
+import { MainBookingTable } from 'components/MainBookingTable/MainBookingTable'
 
 export const Dashboard = () => {
   
@@ -54,7 +55,7 @@ export const Dashboard = () => {
         </DashboardHeader>
       </header>
       <main>
-        tabelka
+        <MainBookingTable month={currentMonth} year={currentYear}/>
       </main>
     </StyledDashboard>
   )

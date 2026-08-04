@@ -6,6 +6,11 @@ export const theme = {
     yaleBlue: 'rgb(11 79 108)',
     yaleBlueBright: 'rgb(11 79 108 / 0.15)',
     yaleBlueDim: 'rgb(11 79 108 / 0.8)'
+  },
+  cellColors: {
+    saturday: 'rgb(255 250 205)',
+    sunday: '	rgb(255 0 0)'
   }
 }
+
 
