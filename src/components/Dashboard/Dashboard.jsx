@@ -1,12 +1,9 @@
 import { useState } from 'react'
 
-import { DashboardHeader, StyledDashboard } from './Dashboard.styles'
+import { StyledDashboard } from './Dashboard.styles'
 
-import { TextButton } from 'components/TextButton/TextButton'
-import { SymbolButton } from 'components/SymbolButton/SymbolButton'
-import { Spacer } from 'components/Spacer/Spacer'
-import { MonthLabel } from 'components/MonthLabel/MonthLabel'
 import { MainBookingTable } from 'components/MainBookingTable/MainBookingTable'
+import { TopBar } from 'components/TopBar/TopBar'
 
 export const Dashboard = () => {
   
@@ -38,21 +35,13 @@ export const Dashboard = () => {
   return (
     <StyledDashboard>
       <header>
-        <DashboardHeader>
-          <TextButton onClick={setCurrentDate}>Dzisiaj</TextButton>
-          <Spacer size={3}/>
-          <SymbolButton onClick={setPrevMonth}>&lt;</SymbolButton>
-          <SymbolButton onClick={setNextMonth}>&gt;</SymbolButton>          
-          <Spacer size={1}/>
-          <MonthLabel 
-            month={currentMonth} 
-            year={currentYear}
-            setPrevMonth={setPrevMonth}
-            setNextMonth={setNextMonth}
-          />
-          <Spacer size={1}/>
-          {/* <IconButton onClick={() => {}}><CalendarClock  /></IconButton>        */}
-        </DashboardHeader>
+        <TopBar 
+          currentMonth={currentMonth} 
+          currentYear={currentYear} 
+          setCurrentDate={setCurrentDate}
+          setPrevMonth={setPrevMonth}
+          setNextMonth={setNextMonth} 
+        />
       </header>
       <main>
         <MainBookingTable month={currentMonth} year={currentYear}/>

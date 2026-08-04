@@ -117,12 +117,7 @@ export const MainBookingTable = ({ month, year }) => {
             </td>
           </tr>
         )}
-
-
-
-
-
-
+        
       </tbody>
     </StyledMainBookingTable>
   )
